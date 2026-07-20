@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/DocHubInc/dochub-mcp-server/security/advisories/new
+    about: Please report security issues privately via GitHub private vulnerability reporting — never in a public issue.
+  - name: DocHub Help Center
+    url: https://help.dochub.com
+    about: Questions about DocHub itself (your account, billing, the editor) are answered fastest by the help center.

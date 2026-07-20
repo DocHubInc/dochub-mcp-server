@@ -1,0 +1,25 @@
+name: Feature request
+description: Suggest an improvement or a new capability for the DocHub MCP connector
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the task or workflow you want to accomplish, not just the feature — it helps us find the best solution.
+      placeholder: e.g. "I want to send a sign request to multiple signers in one step."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: How would you like it to work?
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Workarounds you've tried
+    validations:
+      required: false

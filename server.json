@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.dochub/dochub-mcp-server",
+  "title": "DocHub MCP Server",
+  "description": "Create, edit, fill, and e-sign PDF documents in DocHub, right from your AI assistant.",
+  "version": "1.0.0",
+  "websiteUrl": "https://dochub.com",
+  "repository": {
+    "url": "https://github.com/DocHubInc/dochub-mcp-server",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://dochub.com/mcp"
+    }
+  ]
+}

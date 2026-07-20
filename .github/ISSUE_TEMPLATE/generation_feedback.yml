@@ -1,0 +1,68 @@
+name: Generation feedback
+description: A generated document came out wrong — content, layout, or formatting
+title: "[Generation]: "
+labels: ["generation-quality"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Feedback on generated documents is the most valuable input we get — thank you!
+
+        > 🔒 **Before you paste anything:** replace real names, addresses, and other personal or business details with made-up ones. Please don't attach a generated document if it contains real data.
+  - type: dropdown
+    id: client
+    attributes:
+      label: Where are you using the connector?
+      options:
+        - Claude (claude.ai in the browser)
+        - Claude (desktop app)
+        - ChatGPT
+        - Other (mention it below)
+    validations:
+      required: true
+  - type: dropdown
+    id: whats-wrong
+    attributes:
+      label: What's wrong with the result?
+      options:
+        - The content is incorrect or missing something
+        - The layout or formatting is broken
+        - It's not the kind of document I asked for
+        - The document was generated but didn't save to my account
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: What did you ask for?
+      description: The request you gave the assistant, as close to word-for-word as you can. Remember to swap real details for made-up ones.
+      placeholder: e.g. "Generate a one-page consulting agreement between Acme LLC and Jane Doe, $100/hour, starting August 1st"
+    validations:
+      required: true
+  - type: textarea
+    id: got-instead
+    attributes:
+      label: What did you get, and how does it differ from what you expected?
+      placeholder: e.g. "The agreement looks fine, but the hourly rate ended up in the signature block, and the start date is missing entirely."
+    validations:
+      required: true
+  - type: dropdown
+    id: retry
+    attributes:
+      label: Did you ask the assistant to fix it?
+      description: You can usually ask for changes in a follow-up message ("move the rate into section 3") — did that work?
+      options:
+        - Yes — and it fixed the problem
+        - Yes — but it didn't help
+        - No, I didn't try
+    validations:
+      required: false
+  - type: input
+    id: when
+    attributes:
+      label: When did it happen?
+      description: An approximate date and time with your timezone helps us find it in our logs.
+      placeholder: e.g. 2026-07-16 around 14:30, New York time
+    validations:
+      required: false
