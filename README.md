@@ -58,13 +58,14 @@ The server is built on the open Model Context Protocol standard; support for mor
 | Modify a Previously Generated Document | Refine a generated document with follow-up instructions | Write |
 | List Form Fields on DocHub Document | Inspect the fillable fields on a document | Read |
 | Fill Form Field on DocHub Document | Fill in form fields without opening the editor | Write |
+| Assign Form Field to Document Role | Choose which signer completes a given field — including signature fields — on a sign request draft | Write |
 | List Sign Requests in DocHub | Track your signature workflows | Read |
 | Get Sign Request Details from DocHub | Check signer status for a specific sign request | Read |
 | Create Sign Request Draft from Template | Prepare a sign request draft from one of your templates | Write |
 | Create Sign Request from Document | Prepare a sign request on one of your documents, with the signers you specify — created as a draft for review | Write |
-| Send Sign Request | Send a prepared sign request — signers receive email invitations to sign | Write |
+| Send Sign Request | Validate a prepared sign request, preview exactly what will go out, and send it after your explicit approval | Write |
 
-No tool deletes documents. Sign requests are prepared as drafts for you to review first; the only tool that contacts anyone is Send Sign Request, which emails signature invitations to the signers you chose — and only when you explicitly ask to send.
+No tool deletes documents. Sign requests are prepared as drafts for you to review first; the only tool that contacts anyone is Send Sign Request — and it never sends blindly. Before anything goes out it validates the draft (unsendable drafts are reported with the exact reasons instead of a failed send), then shows you a preview — the document, each recipient, the invitation email subject and body, and whether a recipient may annotate the document — and asks for your explicit approval. If the draft changes between the preview and your approval, the approval is invalidated and you are shown a fresh preview.
 
 ## How it works
 
@@ -89,6 +90,7 @@ The DocHub MCP server is a remote service hosted by DocHub — there is nothing 
 - *"What form fields does my intake form have? Fill in the client details below."*
 - *"Who hasn't signed the vendor agreement yet?"*
 - *"Prepare a sign request draft from my 'Contractor Agreement' template."*
+- *"Assign the signature field on the contract draft to Maria."*
 - *"Send the NDA to maria@acme.com for signature."*
 
 ## Troubleshooting
