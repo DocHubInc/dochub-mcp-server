@@ -59,14 +59,15 @@ The server is built on the open Model Context Protocol standard; support for mor
 | List Form Fields on DocHub Document | Inspect the fillable fields on a document | Read |
 | Fill Form Field on DocHub Document | Fill in form fields without opening the editor | Write |
 | Assign Form Field to Document Role | Choose which signer completes a given field — including signature fields — on a sign request draft | Write |
-| Grant or Revoke Document Annotation for a Role | Control whether a signer may write or draw anywhere on the document, beyond assigned fields | Write |
+| Grant or Revoke Document Annotation for a Role | Control whether a signer may write, draw, or sign anywhere on the document as free content (separate from assigned fields) | Write |
 | List Sign Requests in DocHub | Track your signature workflows | Read |
 | Get Sign Request Details from DocHub | Check signer status for a specific sign request | Read |
 | Create Sign Request Draft from Template | Prepare a sign request draft from one of your templates | Write |
 | Create Sign Request from Document | Prepare a sign request on one of your documents, with the signers you specify — created as a draft for review | Write |
+| Update Sign Request Draft | Change a draft's title or invitation email wording before it is sent | Write |
 | Send Sign Request | Validate a prepared sign request, preview exactly what will go out, and send it after your explicit approval | Write |
 
-No tool deletes documents. Sign requests are prepared as drafts for you to review first; the only tool that contacts anyone is Send Sign Request — and it never sends blindly. Before anything goes out it validates the draft (unsendable drafts are reported with the exact reasons instead of a failed send), then shows you a preview — the document, each recipient with what they will be able to do (how many fields to complete, whether they may annotate the document), and the invitation email subject and body — and asks for your explicit approval. If the draft changes between the preview and your approval, the approval is invalidated and you are shown a fresh preview.
+No tool deletes documents. Sign requests are prepared as drafts for you to review first — until you send, everything stays adjustable: the title and invitation wording, which fields each signer completes, and whether they may write anywhere on the document. The only tool that contacts anyone is Send Sign Request — and it never sends blindly. Before anything goes out it validates the draft (unsendable drafts are reported with the exact reasons instead of a failed send), then shows you a preview — the document, each recipient with what they will be able to do (how many fields to complete, whether they may annotate the document), and the invitation email subject and body — and asks for your explicit approval. If the draft changes between the preview and your approval, the approval is invalidated and you are shown a fresh preview.
 
 ## How it works
 
