@@ -29,9 +29,11 @@ You need a [DocHub account](https://dochub.com). On first use, your client opens
 
 ### Claude (web and desktop)
 
-1. Go to **Settings → Connectors → Add custom connector**.
-2. Enter the URL `https://dochub.com/mcp` and confirm.
-3. When prompted, sign in to DocHub and approve access.
+1. Go to **Settings → Connectors → Add → Browse connectors**.
+2. Enter `DocHub` in a search bar.
+3. Click on a **DocHub** item.
+4. Click **Connect to Claude**.
+5. When prompted, sign in to DocHub and approve access.
 
 ### ChatGPT
 
